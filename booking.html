@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book an Appointment — Nails by Prisca</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-link"><span class="logo-script">Nails by Prisca</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="shop.html" class="nav-link">Shop</a>
+      <a href="booking.html" class="nav-link active">Book</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="booking.html" class="btn-book-nav">Book Now</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <p class="section-label">Reserve Your Slot</p>
+  <h1 class="section-title">Book an <span class="script-inline">Appointment</span></h1>
+  <p style="color:var(--text-light);font-size:0.9rem;margin-top:0.4rem">Pick a date & time — we confirm instantly via WhatsApp.</p>
+</div>
+
+<div class="booking-layout" id="bookingLayout">
+  <!-- CALENDAR -->
+  <div class="calendar-panel">
+    <div class="cal-header">
+      <button class="cal-nav-btn" id="calPrev">‹</button>
+      <span class="cal-month" id="calMonth"></span>
+      <button class="cal-nav-btn" id="calNext">›</button>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+    <div class="cal-legend">
+      <span><span class="dot" style="background:var(--blush-mid)"></span> Available</span>
+      <span><span class="dot" style="background:var(--gold)"></span> Today</span>
+      <span><span class="dot" style="background:var(--dark)"></span> Selected</span>
+    </div>
+  </div>
+
+  <!-- SLOTS + FORM -->
+  <div class="slots-panel" id="slotsPanel">
+    <h3 class="slots-title" id="slotsTitle">👆 Select a date to see available slots</h3>
+    <div class="slots-grid" id="slotsGrid"></div>
+    <div class="booking-form" id="bookingForm" style="display:none">
+      <h4>Your Details</h4>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="bookName" placeholder="e.g. Amara Banda" required>
+      </div>
+      <div class="form-group">
+        <label>Service</label>
+        <select id="bookService">
+          <option value="">Select a service…</option>
+          <option>Acrylic Nail Set</option>
+          <option>Gel Nails</option>
+          <option>Press-On Set</option>
+          <option>Nail Art / Custom Design</option>
+          <option>Manicure</option>
+          <option>Other / Not Sure Yet</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Any special requests?</label>
+        <textarea id="bookNote" placeholder="Design ideas, colours, references…"></textarea>
+      </div>
+      <button class="btn-primary" id="bookSubmit" style="width:100%">
+        <span>Confirm via WhatsApp 💬</span>
+      </button>
+      <p style="font-size:0.75rem;color:var(--text-light);margin-top:0.6rem;text-align:center">
+        This will open WhatsApp with your booking details pre-filled.
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <span class="script-font" style="font-size:1.8rem;color:var(--blush)">Nails by Prisca</span>
+      <p>Be Your Own Kind of Beautiful</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="shop.html">Shop</a>
+      <a href="booking.html">Book</a>
+    </nav>
+    <p class="footer-copy">© 2026 Nails by Prisca · Blantyre, Malawi</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/265889941700?text=Hi%20Prisca!%20I%27d%20like%20to%20book%20🌸" target="_blank" class="fab-whatsapp" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="assets.js"></script>
+<script src="booking.js"></script>
+</body>
+</html>
