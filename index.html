@@ -1,208 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nails by Prisca — Be Your Own Kind of Beautiful</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Nails by Prisca – Premium nail salon in Johnstone, Blantyre, Malawi. Manicures, pedicures, nail art, gel & acrylic nails. Nails that sparkle, service that shines."/>
+  <title>Nails by Prisca | Premium Nail Salon – Blantyre, Malawi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
-<!-- ===== HEADER / NAV ===== -->
-<header class="site-header" id="top">
-  <div class="header-inner">
-    <a href="index.html" class="logo-link">
-      <img src="https://tafika-itaye.github.io/nailsbyprisca/assets/Screenshot_20260330-092207.jpg" alt="Nails by Prisca" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-      <div class="logo-text-fallback" style="display:none">
-        <span class="logo-script">Nails by Prisca</span>
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-icon">💅</span>
+      <div class="brand-text">
+        <span class="brand-name">Nails by Prisca</span>
+        <span class="brand-sub">Blantyre, Malawi</span>
       </div>
     </a>
-    <nav class="main-nav" id="mainNav">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="gallery.html" class="nav-link">Gallery</a>
-      <a href="shop.html" class="nav-link">Shop</a>
-      <a href="booking.html" class="nav-link">Book</a>
-      <a href="#contact" class="nav-link">Contact</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#book">Book Now</a>
     </nav>
-    <a href="booking.html" class="btn-book-nav">Book Now</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-actions">
+      <a href="https://www.instagram.com/nails_by_prisca" target="_blank" class="btn btn-outline">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="#book" class="btn btn-primary">Book Appointment</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
 <!-- ===== HERO ===== -->
-<section class="hero">
+<section id="home" class="hero">
   <div class="hero-bg">
-    <div class="hero-blob blob1"></div>
-    <div class="hero-blob blob2"></div>
-    <div class="hero-blob blob3"></div>
+    <img src="assets/images/hero-bg.jpg" alt="Nails by Prisca premium nail art Blantyre" class="hero-img"/>
+    <div class="hero-overlay"></div>
   </div>
-  <div class="hero-content">
-    <p class="hero-tag">✦ Blantyre, Malawi</p>
-    <h1 class="hero-title"><span class="script-font">Nails by Prisca</span></h1>
-    <p class="hero-tagline">Be Your Own Kind of Beautiful</p>
-    <p class="hero-sub">Professional nail art & beauty accessories — crafted with love, delivered with style.</p>
+  <div class="container hero-content">
+    <div class="hero-pill">
+      <span class="pill-dot"></span>
+      Now Accepting Bookings
+    </div>
+    <h1 class="hero-title">Nails That <em>Sparkle,</em><br/>Service That <em>Shines.</em></h1>
+    <p class="hero-sub">Premium nail services in the heart of Blantyre — manicures, pedicures, nail art, gel & acrylic. Walk out confident, always.</p>
     <div class="hero-actions">
-      <a href="booking.html" class="btn-primary">Book Appointment</a>
-      <a href="shop.html" class="btn-secondary">Browse Shop</a>
+      <a href="#book" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book Your Appointment</a>
+      <a href="#services" class="btn btn-ghost btn-lg"><i class="fas fa-spa"></i> Explore Services</a>
+    </div>
+    <div class="hero-trust">
+      <div class="ht-item"><i class="fas fa-star"></i><span>5-Star Service</span></div>
+      <div class="ht-divider"></div>
+      <div class="ht-item"><i class="fas fa-map-marker-alt"></i><span>Johnstone, Blantyre</span></div>
+      <div class="ht-divider"></div>
+      <div class="ht-item"><i class="fas fa-clock"></i><span>Mon–Sat 8AM–5PM</span></div>
     </div>
   </div>
-  <div class="hero-scroll-hint">scroll ↓</div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,35 C480,70 960,0 1440,35 L1440,70 L0,70 Z" fill="#FDF5F0"/></svg>
+  </div>
 </section>
 
-<!-- ===== SOCIAL STRIP ===== -->
-<div class="social-strip">
-  <a href="https://www.tiktok.com/@nailsbyprisca" target="_blank" class="social-chip">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.79a4.85 4.85 0 01-1.02-.1z"/></svg>
-    @nailsbyprisca
-  </a>
-  <span class="social-divider">✦</span>
-  <a href="https://www.instagram.com/nails_by_prisca" target="_blank" class="social-chip">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-    @nails_by_prisca
-  </a>
+<!-- ===== PROMO TICKER ===== -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span>✦ MANICURES</span>
+    <span>✦ PEDICURES</span>
+    <span>✦ GEL NAILS</span>
+    <span>✦ ACRYLIC NAILS</span>
+    <span>✦ NAIL ART</span>
+    <span>✦ COSMETICS</span>
+    <span>✦ NAIL EXTENSIONS</span>
+    <span>✦ NAIL REPAIRS</span>
+    <span>✦ MANICURES</span>
+    <span>✦ PEDICURES</span>
+    <span>✦ GEL NAILS</span>
+    <span>✦ ACRYLIC NAILS</span>
+    <span>✦ NAIL ART</span>
+    <span>✦ COSMETICS</span>
+    <span>✦ NAIL EXTENSIONS</span>
+    <span>✦ NAIL REPAIRS</span>
+  </div>
 </div>
 
-<!-- ===== SERVICES OVERVIEW ===== -->
-<section class="section services-section">
-  <div class="section-header">
-    <p class="section-label">What We Offer</p>
-    <h2 class="section-title">Our <span class="script-inline">Services</span></h2>
-  </div>
-  <div class="services-grid">
-    <a href="shop.html?cat=nails" class="service-card">
-      <div class="service-icon">💅</div>
-      <h3>Nail Sets</h3>
-      <p>Acrylics, gel, press-ons &amp; nail art. Every shape, every vibe.</p>
-      <span class="service-cta">View Sets →</span>
-    </a>
-    <a href="shop.html?cat=jewelry" class="service-card">
-      <div class="service-icon">💎</div>
-      <h3>Jewellery</h3>
-      <p>Earrings, bracelets &amp; statement pieces for every occasion.</p>
-      <span class="service-cta">Browse →</span>
-    </a>
-    <a href="shop.html?cat=accessories" class="service-card">
-      <div class="service-icon">👜</div>
-      <h3>Accessories</h3>
-      <p>Designer-inspired wallets, bags &amp; fashion accessories.</p>
-      <span class="service-cta">Browse →</span>
-    </a>
-    <a href="booking.html" class="service-card service-card--accent">
-      <div class="service-icon">📅</div>
-      <h3>Book a Session</h3>
-      <p>Pick a date &amp; time slot. We confirm via WhatsApp — fast &amp; easy.</p>
-      <span class="service-cta">Book Now →</span>
-    </a>
-  </div>
-</section>
-
-<!-- ===== PORTFOLIO TEASER ===== -->
-<section class="section gallery-teaser">
-  <div class="section-header">
-    <p class="section-label">Recent Work</p>
-    <h2 class="section-title">Fresh from the <span class="script-inline">Studio</span></h2>
-  </div>
-  <div class="gallery-grid" id="galleryTeaser">
-    <!-- Loaded from GitHub assets -->
-    <div class="gallery-item loading-placeholder"></div>
-    <div class="gallery-item loading-placeholder"></div>
-    <div class="gallery-item loading-placeholder"></div>
-    <div class="gallery-item loading-placeholder"></div>
-    <div class="gallery-item loading-placeholder"></div>
-    <div class="gallery-item loading-placeholder"></div>
-  </div>
-  <div class="text-center mt-2">
-    <a href="gallery.html" class="btn-outline">See Full Gallery</a>
-  </div>
-</section>
-
-<!-- ===== BOOKING TEASER ===== -->
-<section class="section booking-teaser">
-  <div class="booking-teaser-inner">
-    <div class="booking-teaser-text">
-      <p class="section-label" style="color:var(--gold)">Ready to glow?</p>
-      <h2 class="section-title" style="color:#fff">Book Your <span class="script-inline" style="color:var(--blush-light)">Appointment</span></h2>
-      <p style="color:rgba(255,255,255,0.8);margin-bottom:1.5rem;">Choose a date, pick your slot. We'll confirm on WhatsApp within minutes.</p>
-      <a href="booking.html" class="btn-gold">Check Available Slots</a>
+<!-- ===== SERVICES ===== -->
+<section id="services" class="section services-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">What We Offer</span>
+      <h2 class="section-title">Our <em>Services</em></h2>
+      <p>Every service is delivered with precision, care and the finest products — because your nails deserve the best.</p>
     </div>
-    <div class="booking-teaser-visual">
-      <div class="mini-cal">
-        <div class="mini-cal-header">March 2026</div>
-        <div class="mini-cal-grid">
-          <span class="mc-day hdr">Mo</span><span class="mc-day hdr">Tu</span><span class="mc-day hdr">We</span><span class="mc-day hdr">Th</span><span class="mc-day hdr">Fr</span><span class="mc-day hdr">Sa</span><span class="mc-day hdr">Su</span>
-          <span class="mc-day past">25</span><span class="mc-day past">26</span><span class="mc-day past">27</span><span class="mc-day past">28</span><span class="mc-day past">29</span><span class="mc-day avail">30</span><span class="mc-day avail">31</span>
-          <span class="mc-day today">1</span><span class="mc-day avail">2</span><span class="mc-day">3</span><span class="mc-day avail">4</span><span class="mc-day">5</span><span class="mc-day avail">6</span><span class="mc-day avail">7</span>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-img-wrap">
+          <img src="assets/images/service-manicure.jpg" alt="Manicure Nails by Prisca"/>
+          <div class="service-overlay"></div>
         </div>
-        <div class="mini-cal-legend"><span class="dot-avail"></span> Available &nbsp; <span class="dot-today"></span> Today</div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
+          <h3>Manicure</h3>
+          <p>Classic, gel, or spa manicure — shaping, cuticle care, polish and a relaxing hand massage to leave your hands looking and feeling perfect.</p>
+          <ul class="service-list">
+            <li>Classic Manicure</li>
+            <li>Gel Manicure</li>
+            <li>Spa Manicure</li>
+            <li>French Manicure</li>
+          </ul>
+          <a href="#book" class="btn btn-primary btn-sm">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img-wrap">
+          <img src="assets/images/service-pedicure.jpg" alt="Pedicure Nails by Prisca"/>
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-spa"></i></div>
+          <h3>Pedicure</h3>
+          <p>Indulge in a full pedicure experience — foot soak, scrub, cuticle care, callus removal, polish and a soothing foot massage.</p>
+          <ul class="service-list">
+            <li>Classic Pedicure</li>
+            <li>Gel Pedicure</li>
+            <li>Luxury Spa Pedicure</li>
+            <li>Callus Removal</li>
+          </ul>
+          <a href="#book" class="btn btn-primary btn-sm">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img-wrap">
+          <img src="assets/images/service-nail-art.jpg" alt="Nail Art Blantyre"/>
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Nail Art</h3>
+          <p>Custom nail art designs — from minimalist accents to intricate hand-painted artwork. Bring your vision and we'll create it.</p>
+          <ul class="service-list">
+            <li>Hand-Painted Art</li>
+            <li>3D Nail Art</li>
+            <li>Chrome & Ombré</li>
+            <li>Seasonal Designs</li>
+          </ul>
+          <a href="#book" class="btn btn-primary btn-sm">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img-wrap">
+          <img src="assets/images/service-acrylic.jpg" alt="Acrylic gel nails Blantyre"/>
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-gem"></i></div>
+          <h3>Acrylic & Gel Extensions</h3>
+          <p>Long-lasting nail extensions for a bold, glamorous look — shaped to your preference and finished to perfection.</p>
+          <ul class="service-list">
+            <li>Full Acrylic Set</li>
+            <li>Gel Extensions</li>
+            <li>Infills & Refills</li>
+            <li>Nail Repairs</li>
+          </ul>
+          <a href="#book" class="btn btn-primary btn-sm">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img-wrap">
+          <img src="assets/images/service-dip.jpg" alt="Dip powder nails"/>
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-tint"></i></div>
+          <h3>Dip Powder Nails</h3>
+          <p>Odour-free, long-lasting and chip-resistant dip powder nails — a healthier alternative that lasts up to 4 weeks.</p>
+          <ul class="service-list">
+            <li>Dip Powder Full Set</li>
+            <li>Dip Powder Fill</li>
+            <li>Removal & Replacement</li>
+          </ul>
+          <a href="#book" class="btn btn-primary btn-sm">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img-wrap">
+          <img src="assets/images/service-cosmetics.jpg" alt="Cosmetics retail Nails by Prisca"/>
+          <div class="service-overlay"></div>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fas fa-shopping-bag"></i></div>
+          <h3>Cosmetics & Retail</h3>
+          <p>We also stock a wide range of cosmetic products — nail polishes, nail care essentials, and beauty products available for purchase.</p>
+          <ul class="service-list">
+            <li>Nail Polishes</li>
+            <li>Top & Base Coats</li>
+            <li>Nail Care Products</li>
+            <li>Beauty Essentials</li>
+          </ul>
+          <a href="#book" class="btn btn-outline btn-sm">Shop In-Store</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
-<section class="section contact-section" id="contact">
-  <div class="section-header">
-    <p class="section-label">Get in Touch</p>
-    <h2 class="section-title"><span class="script-inline">Contact</span> Us</h2>
+<!-- ===== PRICING ===== -->
+<section id="pricing" class="section pricing-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Transparent Pricing</span>
+      <h2 class="section-title">Price <em>List</em></h2>
+      <p>Quality nail services at prices that make sense. All prices in Malawi Kwacha.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="pc-header"><i class="fas fa-hand-sparkles"></i><h3>Manicure</h3></div>
+        <div class="price-list">
+          <div class="pl-item"><span>Classic Manicure</span><span class="price">MK 5,000</span></div>
+          <div class="pl-item"><span>Gel Manicure</span><span class="price">MK 8,000</span></div>
+          <div class="pl-item"><span>Spa Manicure</span><span class="price">MK 9,000</span></div>
+          <div class="pl-item"><span>French Manicure</span><span class="price">MK 7,000</span></div>
+          <div class="pl-item"><span>Polish Change</span><span class="price">MK 3,000</span></div>
+        </div>
+      </div>
+      <div class="price-card">
+        <div class="pc-header"><i class="fas fa-spa"></i><h3>Pedicure</h3></div>
+        <div class="price-list">
+          <div class="pl-item"><span>Classic Pedicure</span><span class="price">MK 6,000</span></div>
+          <div class="pl-item"><span>Gel Pedicure</span><span class="price">MK 10,000</span></div>
+          <div class="pl-item"><span>Luxury Spa Pedicure</span><span class="price">MK 13,000</span></div>
+          <div class="pl-item"><span>Callus Removal</span><span class="price">MK 4,000</span></div>
+          <div class="pl-item"><span>Polish Change</span><span class="price">MK 3,500</span></div>
+        </div>
+      </div>
+      <div class="price-card featured-price">
+        <div class="pc-badge">Most Popular</div>
+        <div class="pc-header"><i class="fas fa-gem"></i><h3>Acrylic & Gel</h3></div>
+        <div class="price-list">
+          <div class="pl-item"><span>Full Acrylic Set</span><span class="price">MK 15,000</span></div>
+          <div class="pl-item"><span>Acrylic Infill</span><span class="price">MK 10,000</span></div>
+          <div class="pl-item"><span>Gel Extensions</span><span class="price">MK 14,000</span></div>
+          <div class="pl-item"><span>Gel Refill</span><span class="price">MK 9,000</span></div>
+          <div class="pl-item"><span>Nail Repair (per nail)</span><span class="price">MK 1,500</span></div>
+        </div>
+        <a href="#book" class="btn btn-primary btn-full mt">Book This Service</a>
+      </div>
+      <div class="price-card">
+        <div class="pc-header"><i class="fas fa-paint-brush"></i><h3>Nail Art</h3></div>
+        <div class="price-list">
+          <div class="pl-item"><span>Simple Nail Art</span><span class="price">MK 3,000</span></div>
+          <div class="pl-item"><span>Full Nail Art Set</span><span class="price">From MK 8,000</span></div>
+          <div class="pl-item"><span>Chrome / Mirror</span><span class="price">MK 5,000</span></div>
+          <div class="pl-item"><span>Ombré / Gradient</span><span class="price">MK 6,000</span></div>
+          <div class="pl-item"><span>3D Nail Art</span><span class="price">MK 10,000+</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="pricing-note">
+      <i class="fas fa-info-circle"></i>
+      <p>Prices are indicative. Final pricing may vary based on nail condition, length, and complexity of design. Call or WhatsApp us for a quote on custom designs.</p>
+    </div>
   </div>
-  <div class="contact-grid">
-    <div class="contact-card">
-      <div class="contact-icon">📍</div>
-      <h4>Location</h4>
-      <p>Blantyre, Malawi</p>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery" class="section gallery-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Our Portfolio</span>
+      <h2 class="section-title">Our <em>Work</em></h2>
+      <p>Every set is crafted with precision and passion. Swipe through our latest work.</p>
     </div>
-    <div class="contact-card">
-      <div class="contact-icon">📱</div>
-      <h4>WhatsApp</h4>
-      <a href="https://wa.me/265889941700" target="_blank" class="contact-link">+265 889 941 700</a>
+    <div class="gallery-filter">
+      <button class="gf-btn active" data-filter="all">All</button>
+      <button class="gf-btn" data-filter="nailart">Nail Art</button>
+      <button class="gf-btn" data-filter="acrylic">Acrylic / Gel</button>
+      <button class="gf-btn" data-filter="pedicure">Pedicure</button>
+      <button class="gf-btn" data-filter="manicure">Manicure</button>
     </div>
-    <div class="contact-card">
-      <div class="contact-icon">🎵</div>
-      <h4>TikTok</h4>
-      <a href="https://www.tiktok.com/@nailsbyprisca" target="_blank" class="contact-link">@nailsbyprisca</a>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gal-item" data-cat="nailart"><img src="assets/images/gal-1.jpg" alt="Nail art design" loading="lazy"/><div class="gal-overlay"><span>Nail Art</span></div></div>
+      <div class="gal-item gal-tall" data-cat="acrylic"><img src="assets/images/gal-2.jpg" alt="Acrylic nails" loading="lazy"/><div class="gal-overlay"><span>Acrylic</span></div></div>
+      <div class="gal-item" data-cat="pedicure"><img src="assets/images/gal-3.jpg" alt="Pedicure" loading="lazy"/><div class="gal-overlay"><span>Pedicure</span></div></div>
+      <div class="gal-item" data-cat="manicure"><img src="assets/images/gal-4.jpg" alt="Manicure" loading="lazy"/><div class="gal-overlay"><span>Manicure</span></div></div>
+      <div class="gal-item gal-wide" data-cat="nailart"><img src="assets/images/gal-5.jpg" alt="Nail art chrome" loading="lazy"/><div class="gal-overlay"><span>Chrome Nails</span></div></div>
+      <div class="gal-item" data-cat="acrylic"><img src="assets/images/gal-6.jpg" alt="Gel extensions" loading="lazy"/><div class="gal-overlay"><span>Gel Extensions</span></div></div>
+      <div class="gal-item" data-cat="nailart"><img src="assets/images/gal-7.jpg" alt="Ombré nails" loading="lazy"/><div class="gal-overlay"><span>Ombré</span></div></div>
+      <div class="gal-item gal-tall" data-cat="pedicure"><img src="assets/images/gal-8.jpg" alt="Spa pedicure" loading="lazy"/><div class="gal-overlay"><span>Spa Pedicure</span></div></div>
+      <div class="gal-item" data-cat="manicure"><img src="assets/images/gal-9.jpg" alt="French manicure" loading="lazy"/><div class="gal-overlay"><span>French Manicure</span></div></div>
     </div>
-    <div class="contact-card">
-      <div class="contact-icon">📸</div>
-      <h4>Instagram</h4>
-      <a href="https://www.instagram.com/nails_by_prisca" target="_blank" class="contact-link">@nails_by_prisca</a>
+    <div class="gallery-cta">
+      <a href="https://www.instagram.com/nails_by_prisca" target="_blank" class="btn btn-outline">
+        <i class="fab fa-instagram"></i> See More on @nails_by_prisca
+      </a>
     </div>
   </div>
-  <div class="whatsapp-cta">
-    <a href="https://wa.me/265889941700?text=Hi%20Prisca!%20I'd%20like%20to%20enquire%20about%20your%20nail%20services%20🌸" target="_blank" class="btn-whatsapp">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Chat with Prisca on WhatsApp
-    </a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section about-section">
+  <div class="container about-inner">
+    <div class="about-img-wrap">
+      <img src="assets/images/about-prisca.jpg" alt="Prisca nail technician Blantyre Malawi"/>
+      <div class="about-stat-card">
+        <div class="asc-item"><span class="asc-num">5★</span><span>Rated Service</span></div>
+        <div class="asc-divider"></div>
+        <div class="asc-item"><span class="asc-num">100%</span><span>Client Satisfaction</span></div>
+      </div>
+    </div>
+    <div class="about-text">
+      <span class="section-tag">Meet Prisca</span>
+      <h2 class="section-title">The Artist<br/>Behind Your <em>Nails.</em></h2>
+      <p>Nails by Prisca was founded on a simple passion — to make every client feel beautiful, confident and taken care of. Based in Johnstone, Blantyre, Prisca has built a reputation for precision, creativity and a warm, welcoming experience.</p>
+      <p>From a classic nude manicure to an intricate hand-painted nail art masterpiece, every client receives the same level of attention and care. Your nails are in safe, skilled hands.</p>
+      <div class="about-highlights">
+        <div class="ah-item"><i class="fas fa-certificate"></i><div><strong>Trained Professional</strong><span>Certified nail technician</span></div></div>
+        <div class="ah-item"><i class="fas fa-heart"></i><div><strong>Client-Centred</strong><span>Your comfort is our priority</span></div></div>
+        <div class="ah-item"><i class="fas fa-leaf"></i><div><strong>Quality Products</strong><span>Premium, safe nail products only</span></div></div>
+        <div class="ah-item"><i class="fas fa-shield-virus"></i><div><strong>Hygienic Practice</strong><span>Sterilised tools for every client</span></div></div>
+      </div>
+      <a href="#book" class="btn btn-primary">Book With Prisca</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section testimonials-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Client Love</span>
+      <h2 class="section-title">What Our Clients <em>Say</em></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <p>"Nails that sparkle, service that shines — 5 stars all around! Prisca is incredibly talented and patient. My nails have never looked this good."</p>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <div class="testi-author"><img src="assets/images/client-1.jpg" alt=""/><div><strong>Tamara N.</strong><span>Blantyre</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <p>"I've been going to Prisca for over a year and I won't go anywhere else. The nail art she creates is absolutely stunning — always exceeds my expectations."</p>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <div class="testi-author"><img src="assets/images/client-2.jpg" alt=""/><div><strong>Patience K.</strong><span>Blantyre</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <p>"Clean salon, professional service and nails that last! The spa pedicure is absolutely heavenly. I leave every time feeling like a queen."</p>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <div class="testi-author"><img src="assets/images/client-3.jpg" alt=""/><div><strong>Chifundo M.</strong><span>Blantyre</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOOK ===== -->
+<section id="book" class="section book-section">
+  <div class="container book-inner">
+    <div class="book-info">
+      <span class="section-tag">Appointments</span>
+      <h2 class="section-title">Book Your <em>Appointment</em></h2>
+      <p>Ready for your next set? Fill in the booking form and we'll confirm your appointment. Walk-ins welcome, but booking guarantees your slot.</p>
+      <div class="book-contact-cards">
+        <div class="bcc"><i class="fas fa-map-marker-alt"></i><div><strong>Location</strong><span>Johnstone, Blantyre, Malawi</span></div></div>
+        <div class="bcc"><i class="fas fa-clock"></i><div><strong>Hours</strong><span>Mon–Fri: 8:00 AM – 5:00 PM<br/>Saturday: 8:00 AM – 2:00 PM</span></div></div>
+        <div class="bcc"><i class="fab fa-whatsapp"></i><div><strong>WhatsApp</strong><span><a href="https://wa.me/265000000000">Message Us Directly</a></span></div></div>
+        <div class="bcc"><i class="fab fa-instagram"></i><div><strong>Instagram</strong><span><a href="https://www.instagram.com/nails_by_prisca" target="_blank">@nails_by_prisca</a></span></div></div>
+        <div class="bcc"><i class="fab fa-facebook-f"></i><div><strong>Facebook</strong><span><a href="https://www.facebook.com/100063608438220" target="_blank">Nails by Prisca</a></span></div></div>
+      </div>
+      <div class="book-img"><img src="assets/images/book-bg.jpg" alt="Nail salon Blantyre" loading="lazy"/></div>
+    </div>
+    <form class="book-form" id="bookForm" onsubmit="handleBook(event)">
+      <div class="form-title">
+        <h3>Request an Appointment ✨</h3>
+        <p>We'll confirm within a few hours.</p>
+      </div>
+      <div class="form-group">
+        <label>Full Name *</label>
+        <input type="text" placeholder="Your name" required/>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone / WhatsApp *</label>
+          <input type="tel" placeholder="+265 …" required/>
+        </div>
+        <div class="form-group">
+          <label>Preferred Date *</label>
+          <input type="date" required/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Preferred Time</label>
+          <select>
+            <option value="">Select…</option>
+            <option>8:00 AM</option>
+            <option>9:00 AM</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>1:00 PM</option>
+            <option>2:00 PM</option>
+            <option>3:00 PM</option>
+            <option>4:00 PM</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Service *</label>
+          <select required>
+            <option value="">Select…</option>
+            <option>Classic Manicure</option>
+            <option>Gel Manicure</option>
+            <option>Spa Manicure</option>
+            <option>Classic Pedicure</option>
+            <option>Spa Pedicure</option>
+            <option>Full Acrylic Set</option>
+            <option>Acrylic Infill</option>
+            <option>Gel Extensions</option>
+            <option>Nail Art</option>
+            <option>Dip Powder</option>
+            <option>Mani + Pedi Combo</option>
+            <option>Other / Unsure</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Design Inspiration / Notes</label>
+        <textarea rows="4" placeholder="Describe the look you want, reference a design, or mention any allergies / sensitivities…"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">
+        <i class="fas fa-calendar-check"></i> Confirm Booking Request
+      </button>
+      <p class="form-note">Or WhatsApp us directly for a faster response 💬</p>
+      <div class="form-success" id="bookSuccess" style="display:none">
+        <i class="fas fa-check-circle"></i> Request received! We'll confirm your appointment shortly. 💅
+      </div>
+    </form>
   </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-logo">
-      <span class="script-font" style="font-size:1.8rem">Nails by Prisca</span>
-      <p>Be Your Own Kind of Beautiful</p>
+<footer class="footer">
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="#1A0A12"/></svg>
+  </div>
+  <div class="footer-body">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand-wrap"><span class="brand-icon-lg">💅</span><div><span class="footer-brand-name">Nails by Prisca</span><span class="footer-brand-sub">Blantyre, Malawi</span></div></div>
+        <p>Premium nail services delivered with passion and precision. Your nails, perfected.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/nails_by_prisca" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/100063608438220" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/265000000000" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li>Manicure</li>
+          <li>Pedicure</li>
+          <li>Acrylic & Gel</li>
+          <li>Nail Art</li>
+          <li>Dip Powder</li>
+          <li>Cosmetics</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> Johnstone, Blantyre</li>
+          <li><i class="fas fa-clock"></i> Mon–Fri 8AM–5PM</li>
+          <li><i class="fas fa-clock"></i> Sat 8AM–2PM</li>
+          <li><i class="fab fa-instagram"></i> @nails_by_prisca</li>
+        </ul>
+      </div>
     </div>
-    <nav class="footer-nav">
-      <a href="index.html">Home</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="shop.html">Shop</a>
-      <a href="booking.html">Book</a>
-    </nav>
-    <p class="footer-copy">© 2026 Nails by Prisca · Blantyre, Malawi</p>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Nails by Prisca. All rights reserved. Blantyre, Malawi.</p>
+        <p class="footer-tag">Nails that sparkle, service that shines. 💅</p>
+      </div>
+    </div>
   </div>
 </footer>
 
-<!-- ===== FLOATING WHATSAPP ===== -->
-<a href="https://wa.me/265889941700?text=Hi%20Prisca!%20I%20saw%20your%20website%20and%20would%20like%20to%20enquire%20🌸" target="_blank" class="fab-whatsapp" aria-label="WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
-
-<script src="assets.js"></script>
-<script src="main.js"></script>
+<button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
